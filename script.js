@@ -31,6 +31,15 @@ authorParagraph.textContent = author;
 authorParagraph.classList.add('author');
 quoteDiv.appendChild(authorParagraph);
 
+
+const heartParagraph = document.createElement ('span');
+heartParagraph.innerHTML= '<i class="fa-regular fa-heart"></i>';
+heartParagraph.style.color = "blue";
+heartParagraph.style.fontsize = "20px";
+heartParagraph.classList.add('heart')
+quoteDiv.appendChild(heartParagraph);
+
+
 /*Enfin, elle insère l'élément div contenant la citation et son auteur dans l'élément représentant le
 conteneur des citations (quotesContainer) en utilisant appendChild().*/
 quotesContainer.appendChild(quoteDiv);

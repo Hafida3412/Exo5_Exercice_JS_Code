@@ -4,6 +4,7 @@
     align-items: center;
     background-color: rgb(139, 138, 138);
 
+
 }
 
 .quote {
@@ -24,3 +25,8 @@
     display: flex;
     justify-content: flex-end;
 }
+
+p.author{
+    font-style: normal;
+}
+
