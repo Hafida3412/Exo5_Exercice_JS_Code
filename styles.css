@@ -30,7 +30,12 @@ p.author{
     font-style: normal;
 }
 
-.filled {
+
+.heart{
     color: blue;
+}
+
+.filled {
+    color:red;
   }
 

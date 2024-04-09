@@ -34,12 +34,11 @@ quoteDiv.appendChild(authorParagraph);
 
 const heartParagraph = document.createElement ('span');
 heartParagraph.innerHTML= '<i class="fa-regular fa-heart"></i>';
-heartParagraph.style.color = "blue";
 heartParagraph.style.fontsize = "20px";
 heartParagraph.classList.add('heart')
 quoteDiv.appendChild(heartParagraph);
 
-heartParagraph.addEventListener('click', function() {
+heartParagraph.addEventListener('click', ()=> {
     // Vérifier si le coeur est déjà rempli (s'il a la classe 'filled')
     if (heartParagraph.classList.contains('filled')) {
       // Si oui, le vider en retirant la classe 'filled'
