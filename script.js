@@ -39,6 +39,17 @@ heartParagraph.style.fontsize = "20px";
 heartParagraph.classList.add('heart')
 quoteDiv.appendChild(heartParagraph);
 
+heartParagraph.addEventListener('click', function() {
+    // Vérifier si le coeur est déjà rempli (s'il a la classe 'filled')
+    if (heartParagraph.classList.contains('filled')) {
+      // Si oui, le vider en retirant la classe 'filled'
+      heartParagraph.classList.remove('filled');
+    } else {
+      // Sinon, le remplir en ajoutant la classe 'filled'
+      heartParagraph.classList.add('filled');
+    }
+  });
+
 
 /*Enfin, elle insère l'élément div contenant la citation et son auteur dans l'élément représentant le
 conteneur des citations (quotesContainer) en utilisant appendChild().*/
