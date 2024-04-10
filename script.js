@@ -4,7 +4,7 @@ boucle for..in sur un objet appelé quotes.*/
 
 const quotesContainer = document.getElementById('quotes-container');
 
-for (const author in quotes) { /*À chaque itération de la boucle, elle récupère le texte de la citation pour un auteur 
+for (let author in quotes) { /*À chaque itération de la boucle, elle récupère le texte de la citation pour un auteur 
 donné à partir de l'objet quotes et le stocke dans une variable appelée quoteText.*/
 const quoteText = quotes[author];
 
@@ -59,7 +59,6 @@ heartParagraph.addEventListener('click', ()=> {
     }
   });
   
-
 /*Enfin, elle insère l'élément div contenant la citation et son auteur dans l'élément représentant le
 conteneur des citations (quotesContainer) en utilisant appendChild().*/
 quotesContainer.appendChild(quoteDiv);
